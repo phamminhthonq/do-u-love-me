@@ -31,23 +31,15 @@ function move(){
 	noCtn.style.top=top
 };
 yesCtn.addEventListener('click', () => {
-	msg.style.top = "50%"
+	msg.style.top = '50%';
 	overlay.style.opacity = '0.7';
 	overlay.style.display = 'block';
-	msg.style.opacity = '1';
-	msg.addEventListener('transitionend', () => {
-		msg.style.display = 'block';
-	});
 });
 closeBtn.addEventListener('click', () => {
-	msg.style.top ="-35%";
+	msg.style.top = '-100%';
 	overlay.style.opacity = '0';
 	overlay.addEventListener('transitionend', () => {
 		overlay.style.display = 'none';
-	});
-	msg.style.opacity = '0';
-	msg.addEventListener('transitionend', () => {
-		msg.style.display = 'none';
 	});
 });
 var a=new Array(),n=""
