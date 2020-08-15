@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Do U Love Me? | Pmint</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="assets/image/favicon.png"/>
+</head>
+<body onload="on()">
+	<div id="bg">
+		<img id="wall" src="assets/css/bg.jpg">
+	</div>
+	<div id="overlay"></div>
+	<div class="msg">
+		<div id="close-btn"><i class="fas fa-times"></i></div>
+		<h1><center>ANH BIẾT MÀ<img src="assets/image/1.gif"/></center></h1>
+		<h4>Nếu câu trả lời hồi nãy là ép buộc thì hãy trả lời lại nhé :v. <br>Nhập câu trả lời xuống bên dưới và bấm GỬI ĐI</h2>
+		<form id="f" name="f" class="input">
+			<input type="text" name="txt" id="message" autocomplete="off" placeholder="Nhập vào đây nè ..." onkeyup="">
+			<input type="button" name="send-btn" id="send-btn" value="Gửi đi" onclick="Yeu();" maxlength="45">
+		</form>
+		<div id="divResult" style="text-align: center"></div>
+	    <div id="divResult2"></div>
+		<div id="divResult3"></div>
+	</div>
+	<div class="wrap">
+		<div class="content">
+			<div id="text">Em à hãy trả lời câu hỏi của anh nhé. Trả lời cho thật lòng đó nghe chưa ^^</div>
+			<button id="ok-btn">Ok. Hihi :3</button>
+		</div>
+	</div>
+	<div class="yes-container" onclick="">
+		<button id="yes">có, em yêu anh</button>
+	</div>
+	<div class="no-container" onMouseMove="move()">
+		<button id="no">Không, em đéo yêu anh</button>
+	</div>
+	<header>
+		<h1>YÊU ANH KHÔNG ? YÊU HAY KHÔNG YÊU NÓI MỘT LỜI <3</h1>
+		<h2>TẮT CÁI NÀY ĐI MÀ KHÔNG TRẢ LỜI SẼ PHẢI YÊU ANH SUỐT ĐỜI ♥ =))</h2>
+	</header>
+	<script type="text/javascript" src="assets/js/app.js" defer></script>
+</body>
+</html>
